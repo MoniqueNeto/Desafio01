@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Enviando e-mail usando Node.js
+  
+  form(action="/enviar", method="post", )
+    div.principal
+      label(for="nomeCompleto") Nome Completo:
+      input(type="text", name="nome", id="nomeCompleto")
+      label(for="email") Email:
+      input(type="text", name="email", id="email") 
+      button(type="submit") Enviar
